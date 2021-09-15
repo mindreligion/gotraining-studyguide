@@ -79,5 +79,12 @@ func main() {
 	// Specify type and perform a conversion.
 	aaa := int32(10)
 
-	fmt.Printf("aaa := int32(10) %T [%v]\n", aaa, aaa)
+	fmt.Printf("aaa := int32(10) %T [%v]\n\n", aaa, aaa)
+
+	sss := "hello bobr"
+
+	fmt.Printf("aaa := int32(10) %T [%v] addr %v\n", sss, sss, &sss)
+
+	sss += "z"
+	fmt.Printf("aaa := int32(10) %T [%v] addr %v\n", sss, sss, &sss)
 }
